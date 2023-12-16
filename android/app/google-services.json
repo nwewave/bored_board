@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "115838068071",
+    "project_id": "my-bored-board",
+    "storage_bucket": "my-bored-board.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115838068071:android:5e80f7462922ced3b2fbc2",
+        "android_client_info": {
+          "package_name": "com.example.boasting_board"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8oJ_BeYO3j2K4TGcILj0Vz7eKLqx2PPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
