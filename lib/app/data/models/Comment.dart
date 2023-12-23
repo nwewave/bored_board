@@ -1,31 +1,31 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class Post {
+class Comment {
   late String id = '0';
   late String title;
   late String contents;
   late String regDt;
 
-  Post({
+  Comment({
     required this.id,
     required this.title,
     required this.contents,
     required this.regDt,
   });
 
-  Post.fromMap(Map<String, dynamic>? map, String param_id) {
+  Comment.fromMap(Map<String, dynamic>? map, String param_id) {
     id = param_id;
     title = map?['title'] ?? '';
     contents = map?['contents'] ?? '';
     regDt = map?['regDt'] ?? '2023-11-19';
   }
 
-  factory Post.fromFirestore(
+  factory Comment.fromFirestore(
     DocumentSnapshot<Map<String, dynamic>> snapshot,
     SnapshotOptions? options,
   ) {
     final data = snapshot.data();
-    return Post(
+    return Comment(
       id: snapshot.id,
       title: data?['title'],
       contents: data?['contents'],

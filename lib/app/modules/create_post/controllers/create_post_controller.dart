@@ -7,7 +7,7 @@ import '../../../data/models/Post.dart';
 import '../../../util/logger.dart';
 import '../../sub/controllers/sub_controller.dart';
 
-class CreateNewPostController extends GetxController {
+class CreatePostController extends GetxController {
   late FirebaseFirestore db;
   final title = RxString("");
   final contents = RxString("");

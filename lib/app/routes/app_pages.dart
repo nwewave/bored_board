@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 
-import '../modules/create_new_post/bindings/create_new_post_binding.dart';
-import '../modules/create_new_post/views/create_new_post_view.dart';
+import '../modules/create_post/bindings/create_post_binding.dart';
+import '../modules/create_post/views/create_post_view.dart';
 import '../modules/detail_post/bindings/detail_post_binding.dart';
 import '../modules/detail_post/views/detail_post_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/signin/bindings/signin_binding.dart';
+import '../modules/signin/views/signin_view.dart';
+import '../modules/signup/bindings/signup_binding.dart';
+import '../modules/signup/views/signup_view.dart';
 import '../modules/sub/bindings/sub_binding.dart';
 import '../modules/sub/views/sub_view.dart';
 import '../modules/update_post/bindings/update_post_binding.dart';
@@ -30,9 +34,9 @@ class AppPages {
       binding: SubBinding(),
     ),
     GetPage(
-      name: _Paths.CREATE_NEW_POST,
-      page: () => const CreateNewPostView(),
-      binding: CreateNewPostBinding(),
+      name: _Paths.CREATE_POST,
+      page: () => const CreatePostView(),
+      binding: CreatePostBinding(),
     ),
     GetPage(
       name: _Paths.UPDATE_POST,
@@ -43,6 +47,16 @@ class AppPages {
       name: _Paths.DETAIL_POST,
       page: () => const DetailPostView(),
       binding: DetailPostBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIGNUP,
+      page: () => const SignupView(),
+      binding: SignupBinding(),
+    ),
+    GetPage(
+      name: _Paths.SIGNIN,
+      page: () => const SigninView(),
+      binding: SigninBinding(),
     ),
   ];
 }

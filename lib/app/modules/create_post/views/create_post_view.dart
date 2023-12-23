@@ -4,10 +4,10 @@ import 'package:get/get.dart';
 
 import '../../../util/logger.dart';
 import '../../../widgets/default_dialog.dart';
-import '../controllers/create_new_post_controller.dart';
+import '../controllers/create_post_controller.dart';
 
-class CreateNewPostView extends GetView<CreateNewPostController> {
-  const CreateNewPostView({Key? key}) : super(key: key);
+class CreatePostView extends GetView<CreatePostController> {
+  const CreatePostView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -22,7 +22,8 @@ class HomeView extends GetView<HomeController> {
                 ? const Text('loadeed')
                 : const SizedBox(),
             GestureDetector(
-              onTap: () => Get.toNamed(Routes.SUB),
+              // onTap: () => Get.toNamed(Routes.SUB),
+              onTap: () => Get.toNamed(Routes.SIGNUP),
               child: Container(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 15, vertical: 11),

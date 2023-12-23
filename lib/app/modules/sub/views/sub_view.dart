@@ -17,7 +17,7 @@ class SubView extends GetView<SubController> {
         centerTitle: true,
         actions: [
           GestureDetector(
-            onTap: () => Get.toNamed(Routes.CREATE_NEW_POST),
+            onTap: () => Get.toNamed(Routes.CREATE_POST),
             child: const Padding(
               padding: EdgeInsets.only(right: 24),
               child: Icon(Icons.add),
