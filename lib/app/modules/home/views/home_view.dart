@@ -11,30 +11,28 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeView'),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-        child: Column(
-          children: [
-            controller.isLoaded.value
-                ? const Text('loadeed')
-                : const SizedBox(),
-            GestureDetector(
-              // onTap: () => Get.toNamed(Routes.SUB),
-              onTap: () => Get.toNamed(Routes.SIGNUP),
-              child: Container(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 15, vertical: 11),
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black87),
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: const Text('Click!'),
+      body: const Center(
+        child: Text(
+          'Booooaaaaard',
+          style: TextStyle(fontSize: 50),
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: GestureDetector(
+            onTap: () => Get.offAndToNamed(Routes.SIGNIN),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 11),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.black87),
+                borderRadius: BorderRadius.circular(18),
               ),
+              child: const Text('Get Started!'),
             ),
-          ],
+          ),
         ),
       ),
     );

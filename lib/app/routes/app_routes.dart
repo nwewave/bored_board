@@ -10,6 +10,7 @@ abstract class Routes {
   static const DETAIL_POST = _Paths.DETAIL_POST;
   static const SIGNUP = _Paths.SIGNUP;
   static const SIGNIN = _Paths.SIGNIN;
+  static const ROOT = _Paths.ROOT;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const DETAIL_POST = '/detail-post';
   static const SIGNUP = '/signup';
   static const SIGNIN = '/signin';
+  static const ROOT = '/root';
 }

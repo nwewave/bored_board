@@ -45,7 +45,7 @@ class UpdatePostView extends GetView<UpdatePostController> {
                   alignment: Alignment.topRight,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.black12,
+                      backgroundColor: Colors.blue,
                     ),
                     onPressed: () async {
                       bool result = await controller.updateNewPost();

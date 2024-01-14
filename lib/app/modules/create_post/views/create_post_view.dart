@@ -43,7 +43,7 @@ class CreatePostView extends GetView<CreatePostController> {
                 alignment: Alignment.topRight,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.black12,
+                    backgroundColor: Colors.blue,
                   ),
                   onPressed: () async {
                     bool result = await controller.postNewPost();

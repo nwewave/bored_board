@@ -13,7 +13,6 @@ class SubView extends GetView<SubController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SubView'),
         centerTitle: true,
         actions: [
           GestureDetector(
@@ -24,6 +23,44 @@ class SubView extends GetView<SubController> {
             ),
           ),
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: const BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Column(children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text('User name'),
+                    GestureDetector(
+                      onTap: () async {
+                        controller.signOut();
+                      },
+                      child: const Icon(Icons.logout_outlined),
+                    ),
+                  ],
+                )
+              ]),
+            ),
+            ListTile(
+              title: const Text('Item 1'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+            ListTile(
+              title: const Text('Item 2'),
+              onTap: () {
+                Get.back();
+              },
+            ),
+          ],
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),

@@ -23,7 +23,7 @@ void serverConnectErrorToast() {
 
 void basicToast({
   required Widget message,
-  Color backgroundColor = const Color(0xff434343),
+  Color backgroundColor = const Color.fromARGB(100, 67, 67, 67),
   EdgeInsets margin = const EdgeInsets.all(0),
 }) {
   if (Get.isSnackbarOpen) return;
