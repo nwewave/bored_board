@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
 import '../../../data/models/Post.dart';
+import '../../../util/logger.dart';
 import '../../sub/controllers/sub_controller.dart';
 
 class DetailPostController extends GetxController {

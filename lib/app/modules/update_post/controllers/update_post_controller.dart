@@ -36,10 +36,12 @@ class UpdatePostController extends GetxController {
         contents.value = tmpPost.contents;
         contentsEditCtrl.text = contents.value;
         updatedPost.value = Post(
-            id: doc.id,
-            title: title.value,
-            contents: contents.value,
-            regDt: tmpPost.regDt);
+          id: doc.id,
+          title: title.value,
+          contents: contents.value,
+          regDt: tmpPost.regDt,
+          author: tmpPost.author,
+        );
       },
       onError: (e) => print("Error getting document: $e"),
     );

@@ -18,8 +18,12 @@ class CreatePostController extends GetxController {
   @override
   void onInit() {
     db = FirebaseFirestore.instance;
-    newPost.value =
-        Post(id: '0', title: title.value, contents: contents.value, regDt: '');
+    newPost.value = Post(
+        id: '0',
+        title: title.value,
+        contents: contents.value,
+        regDt: '',
+        author: '');
     ever(title, (callback) {
       newPost.value?.title = title.value;
     });

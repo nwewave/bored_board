@@ -36,7 +36,7 @@ class SubView extends GetView<SubController> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text('User name'),
+                    Text(controller.user.value?.displayName ?? 'User name'),
                     GestureDetector(
                       onTap: () async {
                         controller.signOut();
